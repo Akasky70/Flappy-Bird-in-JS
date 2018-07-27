@@ -1,0 +1,110 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+
+img{
+	display: block;
+	border:none;
+}
+
+body{
+	background-color: #ded895;
+}
+
+@font-face {
+  	font-family: '04b_19';
+    src:  url('../fonts/04b_19.ttf.woff') format('woff'),
+    url('../fonts/04b_19.ttf.svg#04b_19') format('svg'),
+    url('../fonts/04b_19.ttf.eot'),
+    url('../fonts/04b_19.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+	width:100%;
+	height:100%;
+	/*background-color: lightgray;*/
+	margin: 0px 0px 0px 0px;
+	font-family: '04b_19';
+	position: relative;
+}
+
+.frame{
+	width:740px;
+	height:550px;
+	background-color: transparent;
+	background-image: url("../images/frame.png");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	
+	z-index: 200;
+}
+
+.bg-panel{
+	background-repeat:repeat-x;
+	background-size: 30% 100%;
+	background-color: transparent;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.game-panel{
+	background-repeat: repeat-x;
+	background-position: 0 100%;
+	background-color: transparent;
+	/*margin: 0 auto;*/
+	position: relative;
+	overflow: hidden;
+	z-index: 60;
+}
+
+.game-panel h1{
+	font-family: '04b_19';
+	color:rgba(255, 255, 255, 0.8);
+	text-align: center;
+	font-size: 100px;
+	text-shadow:0px 0px 8px #000;
+	/*margin-top:35%;	*/
+
+}
+.game-panel h1:hover{
+	color:rgba(255, 255, 255, 1);
+	cursor:pointer;
+}
+
+.game-panel p:hover{
+	color:rgba(255, 255, 255, 1);
+	cursor:pointer;
+}
+
+.game-panel p{
+	font-family: '04b_19';
+	color:rgba(255, 255, 255, 0.8);
+	text-align: center;
+	font-size: 30px;
+	text-shadow:0px 0px 8px #000;
+	margin-top:20%;	
+}
+.bird-design{
+	position: absolute;
+	/*background-color: red;*/
+	/*outline: 1px dashed black;*/
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index:70;
+}
+
+.obstacles{
+
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-color: red;*/
+	z-index:20;
+
+}
