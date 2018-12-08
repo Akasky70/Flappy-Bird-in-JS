@@ -29,7 +29,7 @@ class Game{
 				parent	   : $bgPanel,
 				class	: "obstacles",
 				background : (speedIncrement > 8) ? "images/pipe-red.png" :"images/pipe-green.png",
-				speed	: 10 + speedIncrement ,
+				speed	: 3 + speedIncrement ,
 				height  : (positionY ===1) ?
 							heightOfObstacle : 
 							(Math.floor(Math.random() * (380 - 360)) + 360) - heightOfObstacle,
