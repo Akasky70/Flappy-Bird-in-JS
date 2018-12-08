@@ -19,7 +19,7 @@ class Game{
 		
 		for(let i = 0; i < 2; i++){
 			
-			speedIncrement += 0.2; 
+			speedIncrement += 0.02; 
 			
 			this.obstacles[this.obstacleCount] = new Obstacle({
 	
@@ -29,7 +29,7 @@ class Game{
 				parent	   : $bgPanel,
 				class	: "obstacles",
 				background : (speedIncrement > 8) ? "images/pipe-red.png" :"images/pipe-green.png",
-				speed	: 3 + speedIncrement ,
+				speed	: 8 + speedIncrement ,
 				height  : (positionY ===1) ?
 							heightOfObstacle : 
 							(Math.floor(Math.random() * (380 - 360)) + 360) - heightOfObstacle,
@@ -40,7 +40,7 @@ class Game{
 			positionY = -1;
 		}
 
-		return (20 - Math.ceil(speedIncrement));
+		return (25 - Math.ceil(speedIncrement));
 	}	
 
 	// MOVE OBSTACLE BY INVOKING FUNCTION IN OBSTACLE CLASS

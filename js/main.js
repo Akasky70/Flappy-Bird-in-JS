@@ -53,13 +53,13 @@ const createPanel = () =>{
 	
 	bird = new FlappyBird({
 
-		width		: 45,
+		width			: 45,
 		height		: 35,
 		top			: 200,
-		left		: 500,
+		left			: 500,
 		id 			: "bird",
 		parent		: $bgPanel,
-		class		: "bird-design",
+		class			: "bird-design",
 		background 	: "images/flappy.gif",
 	});
 
@@ -94,7 +94,7 @@ function animateGame(){
 	if(obstaclesInterval === 0){
 
 		obstaclesInterval = game.createObstcles();
-		if(obstaclesInterval <= 0) obstaclesInterval = 5;
+		if(obstaclesInterval <= 0) obstaclesInterval = 20;
 	}
 
 	game.moveObstacles();

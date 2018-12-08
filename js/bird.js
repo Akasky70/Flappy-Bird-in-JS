@@ -5,9 +5,9 @@ class FlappyBird{
 	constructor( props ){
 		this.deg 		= 0;
 		this.life		= 1;
-		this.timeCount 	= 6;
+		this.timeCount = 6;
+		this.speed 		= 20;
 		this.dy			= -1;
-		this.speed 		= 5;
 		this.id			= props.id;
 		this.class 		= props.class;
 		this.$parent 	= props.parent;
@@ -42,7 +42,7 @@ class FlappyBird{
 		if(this.timeCount > 0){
 		 	
 		 	this.dy = -1;
-		 	this.speed = 5;
+		 	this.speed = 4;
 		 	this.timeCount--;
 		 	(this.deg <= -35) ? this.deg = -35 : this.deg -= 10;
 
