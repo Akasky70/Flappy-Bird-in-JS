@@ -42,7 +42,7 @@ class FlappyBird{
 		if(this.timeCount > 0){
 		 	
 		 	this.dy = -1;
-		 	this.speed = 8;
+		 	this.speed = 5;
 		 	this.timeCount--;
 		 	(this.deg <= -35) ? this.deg = -35 : this.deg -= 10;
 
