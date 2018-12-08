@@ -7,7 +7,7 @@ class FlappyBird{
 		this.life		= 1;
 		this.timeCount 	= 6;
 		this.dy			= -1;
-		this.speed 		= 10;
+		this.speed 		= 5;
 		this.id			= props.id;
 		this.class 		= props.class;
 		this.$parent 	= props.parent;
