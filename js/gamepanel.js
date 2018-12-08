@@ -6,7 +6,7 @@ class GamePanel{
 		this.lastScore = 0;
 		this.scrollX 	= 0;
 		this.dx			= -1;
-		this.speed 		= 10;
+		this.speed 		= 5;
 		this.id			= props.id;
 		this.class 		= props.class;
 		this.$parent 	= props.parent;
